@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-export default function Field({title,value}:{title:string,value:string|number}) {
+export default function TextColumn({title,value}:{title:string,value:string|number}) {
   return (
     <View className='w-[100%] flex flex-row'>
       <Text className='w-[30%] font-semibold text-slate-800 uppercase'>{title}</Text>

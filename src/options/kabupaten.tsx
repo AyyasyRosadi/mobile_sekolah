@@ -7,7 +7,7 @@ export default function useKabupatenOptions(provinsi_id: string,status:boolean) 
     useEffect(() => {
         if (provinsi?.data?.data && provinsi_id !== '') {
             setKabupatenList(provinsi?.data?.data?.map((value) => {
-                return { value: value.id, label: value.nama }
+                return { value: value.id, label: value.name }
             }))
         }
     }, [provinsi?.data?.data, provinsi_id])

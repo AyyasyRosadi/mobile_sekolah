@@ -7,7 +7,7 @@ export default function useProvinsiOptions() {
     useEffect(() => {
         if (provinsi?.data?.data) {
             setProvinsiList(provinsi?.data?.data?.map((value) => {
-                return { value: value.id, label: value.nama }
+                return { value: value.id, label: value.name }
             }))
         }
     }, [provinsi?.data?.data])

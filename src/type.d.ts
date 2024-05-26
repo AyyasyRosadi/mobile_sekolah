@@ -1,27 +1,26 @@
-export default interface ProvinsiAttributes {
+export interface ProvinsiAttributes {
     id: string;
-    nama: string;
+    name: string;
 }
 
-export default interface KabupatenAttributes {
+export interface KabupatenAttributes {
     id: string;
-    nama: string;
+    name: string;
     provinsi_id: string;
 }
 
-export default interface DaftarSekolahAttributes {
+export interface DaftarSekolahAttributes {
     id: string;
-    kategori: string;
-    nama: string;
-    alamat: string;
-    kode_pos: number;
-    provinsi_id: string;
-    kabupaten_id: string;
-    no_telepon: string;
+    category: string;
+    name: string;
+    address: string;
+    postal_code: string;
+    provinsi_id: number;
+    kabupaten_id: number;
+    phone_number: string;
     email: string;
     facebook: string;
-    jumlah_siswa: number;
+    total_students: number;
     provinsi?: ProvinsiAttributes;
-    kabupaten?: any;
+    kabupaten?: KabupatenAttributes;
 }
-

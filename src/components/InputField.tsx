@@ -20,7 +20,7 @@ const InputField = ({ title, method, methodName, placeholder, keyboard }: { titl
                     />
                 )}
             />
-            <Text className='text-red-700 font-semibold mx-1'>{error ? "Input Harus di isi!" : ""}</Text>
+            <Text className='text-red-700 font-semibold mx-1'>{error ? "Input harus di isi dan sesuai!" : ""}</Text>
         </View>
     )
 }
