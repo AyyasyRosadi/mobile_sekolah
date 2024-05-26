@@ -1,26 +1,26 @@
-export interface ProvinsiAttributes {
+export interface ProvinceAttributes {
     id: string;
     name: string;
 }
 
-export interface KabupatenAttributes {
+export interface RegencyAttributes {
     id: string;
     name: string;
-    provinsi_id: string;
+    province_id: string;
 }
 
-export interface DaftarSekolahAttributes {
+export interface SchoolListAttributes {
     id: string;
     category: string;
     name: string;
     address: string;
     postal_code: string;
-    provinsi_id: number;
-    kabupaten_id: number;
+    province_id: string;
+    regency_id: string;
     phone_number: string;
     email: string;
     facebook: string;
     total_students: number;
-    provinsi?: ProvinsiAttributes;
-    kabupaten?: KabupatenAttributes;
+    province?: ProvinceAttributes;
+    regency?: RegencyAttributes;
 }

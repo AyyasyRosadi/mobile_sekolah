@@ -1,5 +1,5 @@
 import { View, Text, Platform } from 'react-native'
-import React, { useState } from 'react'
+import React from 'react'
 import { Picker, PickerIOS } from '@react-native-picker/picker'
 import { ItemValue } from '@react-native-picker/picker/typings/Picker'
 import { Controller, UseFormReturn } from 'react-hook-form'
